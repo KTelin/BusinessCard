@@ -8,10 +8,18 @@ var tab1 = Ti.UI.createTab({
 	title: 'Contact Info',
 	window: winLand	
 });
+var myPic = Ti.UI.createImageView({
+	height: '25%',
+	width: '30%',
+	top: '10%'
+});
+
+myPic.image = '\MeBitch.jpg';
 
 var viewLand = Ti.UI.createView({
 	backgroundColor: '#5e6a71',
-	top: '20%',
+	top: '40%',
+	width: '80%',
 	height: '13%'
 });
 
@@ -42,7 +50,8 @@ var contactTable = Ti.UI.createTableView({
 	data: contactData,
 	headerTitle: 'Contact Information',
 	backgroundColor: '#5e6a71',
-	top: '55%',
+	top: '63%',
+	width: '80%',
 	height: '20%'
 });
 
@@ -57,7 +66,9 @@ var tab2 = Ti.UI.createTab({
 });
 
 var viewPort = Ti.UI.createView({
-	backgroundColor: '#5e6a71'
+	backgroundColor: '#5e6a71',
+	height: '80%',
+	width: '80%'
 });
 
 var labelPort = Ti.UI.createLabel({
@@ -71,6 +82,7 @@ viewLand.add(labelName);
 viewLand.add(labelUni);
 viewLand.add(labelMajor);
 winLand.add(viewLand);
+winLand.add(myPic);
 winLand.add(contactTable);
 viewPort.add(labelPort);
 winPort.add(viewPort);
