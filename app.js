@@ -17,20 +17,21 @@ var viewLand = Ti.UI.createView({
 
 var labelName = Ti.UI.createLabel({
 	color: '#000000',
+	font: {fontSize: '20dp'},
 	text: 'Seth Rathbun',
 	top: '0%'
 });
 
 var labelUni = Ti.UI.createLabel({
 	color: '#000000',
-	font: { fontSize: '12dp'},
+	font: { fontSize: '15dp'},
 	text: 'University of Idaho',
 	top: '33%'
 });
 
 var labelMajor = Ti.UI.createLabel({
 	color: '#000000',
-	font: { fontSize: '12dp'},
+	font: { fontSize: '15dp'},
 	top: '66%',
 	text: 'Information Systems'
 });
@@ -55,10 +56,12 @@ var tab2 = Ti.UI.createTab({
 	window: winPort
 });
 
-var viewPort = Ti.UI.createView();
+var viewPort = Ti.UI.createView({
+	backgroundColor: '#5e6a71'
+});
 
 var labelPort = Ti.UI.createLabel({
-	font: {fontSize: '14dp'},
+	font: {fontSize: '20dp'},
 	text: 'My name is Seth Rathbun, I am currently a student in the College of Business and Economics at the University of Idaho, where I am majoring in '+
 	'Information Systems. I am currently working towards graduating in the Spring semester of 2016 and aim to utilize my degree in the defense industry '+
 	'by focusing my education on network security and penetration testing.'
